@@ -1,0 +1,7 @@
+qdrant-client
+pypdf
+transformers
+torch
+llama-index-llms-ollama
+llama-index
+llama-index-vector-stores-qdrant
