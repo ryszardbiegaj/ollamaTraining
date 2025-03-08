@@ -5,8 +5,10 @@ from ollama import chat
 from ollama import ChatResponse
 from ollama import Client
 
+# here I connect with computer in my local network
+
 client = Client(
-    host =  'http://192.168.50.74:11434'
+    host =  'http://192.168.50.74:11434' 
 )
 response = client.chat(model='deepseek-r1:14b', messages=[
   {
@@ -15,5 +17,7 @@ response = client.chat(model='deepseek-r1:14b', messages=[
   },
 ])
 print(response['message']['content'])
+
 # or access fields directly from the response object
+
 print(response.message.content)
